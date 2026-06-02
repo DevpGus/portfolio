@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Projeto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/style.css"/>
+</head>
+<body>
+    <!-- ── Header ─────────────────────────────────────────────────── -->
+    <section id="hero">
+    <div class="container">
+      <div class="hero-tag">Projeto 01</div>
+      <h1>
+        <em>∂</em><br>  Classificador de leads dinâmico.
+      </h1>
+
+      <div class="hero-actions">
+        <a href="#" class="btn-primary">Código</a>
+        <a href="#" class="btn-secondary">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats strip ─────────────────────────────────────────────────── -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-number">Timeline</div>
+      <div class="stat-label">2 meses</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">Time</div>
+      <div class="stat-label">Solo</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">Status</div>
+      <div class="stat-label">Desenvolvido</div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- ── About ──────────────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">◯</span>
+        <h2>Sobre o projeto</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            O projeto utiliza um conjunto de dados de vendas do Kaggle que foi 
+            adaptado para simular um ambiente realista de CRM. Características-chave 
+            como risco de crédito, potencial regional, número de funcionários, CNAE 
+            (código do setor) e dimensão da empresa foram definidas para servir de 
+            base ao modelo preditivo. O modelo final oferece uma solução automatizada 
+            e baseada em dados para a classificação de clientes, permitindo uma estratégia 
+            de vendas mais eficiente e direcionada.
+          </p>
+          <h2>Key Features</h2>
+                        <ul>
+                            <li>Análise de CRM</li>
+                            <li>Segmentação de clientes</li>
+                            <li>Score de leads</li>
+                            <li>Engenharia de features</li>
+                            <li>Previsão do tempo de vida do cliente</li>
+                        </ul>
+            
+          <p>
+            Foram treinados e avaliados vários modelos populares de machine learning, incluindo 
+            o XGBoost, a Random Forest, o LightGBM e a regressão logística, com o objetivo de 
+            determinar o algoritmo com melhor desempenho para esta tarefa de classificação.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ── Contact ────────────────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+
+        <div class="contact-links reveal">
+          
+          
+          <a href="https://github.com/DevpGus" target="_blank" class="contact-link">
+            <div>
+              <div class="link-label">GitHub</div>
+            </div>
+            <span class="link-arrow">→</span>
+          </a>
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      }),
+      { threshold: 0.12 }
+    );
+ 
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = `${(i % 4) * 60}ms`;
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

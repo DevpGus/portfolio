@@ -242,6 +242,18 @@ h2 {
     align-items: start;
 }
 
+.about-grid h2 {
+    font-size: 18px;
+
+}
+
+.about-grid ul {
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
 .about-text p {
     font-size: 17px;
     color: var(--ink-soft);
