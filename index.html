@@ -9,9 +9,369 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./src/style.css"/>
 </head>
-<body>
+<body> 
 
-    
+    <!-- ── Navigation ─────────────────────────────────────────────────── -->
+  <nav>
+    <div class="container">
+      <a href="#hero" class="nav-logo">GUSTAVO RODRIGUES</a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#publications">Publicações</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Hero ───────────────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-tag">PESQUISADOR E DESENVOLVEDOR EM MATEMÁTICA APLICADA</div>
+      <h1>
+        Modelagem, análise<br>
+        e <em>descoberta</em>.
+      </h1>
+      <p class="hero-bio">
+        Trabalho na interseção entre matemática, software e dados — desenvolvendo
+        modelos e aplicações que traduzem complexidade em compreensão. Orientado a 
+        solucionar problemas físico-matemáticos, estatísticos e de negócio.
+      </p>
+      <div class="hero-actions">
+        <a href="#publications" class="btn-primary">Ver publicações</a>
+        <a href="#contact" class="btn-secondary">Entre em contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats strip ─────────────────────────────────────────────────── -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-number">2</div>
+      <div class="stat-label">Anos de Consultoria</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">2</div>
+      <div class="stat-label">Projetos ativos</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">1</div>
+      <div class="stat-label">Ano de pesquisa</div>
+    </div>
+  </div>
+
+  <!-- ── About ──────────────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2>Sobre mim</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            Sou graduando em matemática aplicada com foco em modelagem de 
+            sistemas e análise estatística de dados complexos. Meu trabalho 
+            busca criar pontes entre as estruturas matemáticas formais e os 
+            problemas do mundo real: sejam aplicações para o mercado de trabalho, 
+            ou resultados que contribuam na produção de conhecimento científico.
+          </p>
+          <p>
+            Do ponto de vista físico-matemático, tenho experiência em resolução 
+            de equações diferenciais, sistemas de equações e modelagem de dados, 
+            utilizando modelos estatísticos.
+            Em relação ao mercado, tenho experiência no desenvolvimento de soluções 
+            práticas para otimização em decisões estratégicas e processos de negócios,
+            através de modelos preditivos, inteligência artificial, análise de dados,
+            automações, pesquisa operacional e dashboards interativos. 
+          </p>
+          <p>
+            Quando não estou pesquisando, gosto de explorar a interseção entre
+            ciência de dados e física teórica — sempre em busca de perguntas
+            mais interessantes do que respostas definitivas.
+          </p>
+        </div>
+        <div class="about-sidebar">
+          <div class="sidebar-block">
+            <div class="sidebar-label">Áreas</div>
+            <!-- EDITE: suas áreas de pesquisa -->
+            <div class="sidebar-item">Análise Numérica</div>
+            <div class="sidebar-item">Aprendizado de Máquina</div>
+            <div class="sidebar-item">Sistemas Dinâmicos</div>
+            <div class="sidebar-item">Análise de Dados</div>
+          </div>
+          <div class="sidebar-block">
+            <div class="sidebar-label">Localização</div>
+            <div class="sidebar-item">Campinas - São Paulo, Brasil</div>
+            <div class="sidebar-item">Unicamp</div>
+          </div>
+          <div class="sidebar-block">
+            <div class="sidebar-label">Idiomas</div>
+            <div class="sidebar-item">Inglês Avançado</div>
+            <div class="sidebar-item">Espanhol Intermediário</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Publications ───────────────────────────────────────────────── -->
+  <section id="publications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2>Publicações</h2>
+      </div>
+      <div class="pub-list">
+ 
+        <div class="pub-item reveal">
+          <span class="pub-year">2026</span>
+          <div class="pub-content">
+            <div class="pub-title">
+              Projeto de Microscópio Tridimensional de Baixo Custo para Paleontologia
+              <span class="pub-tag">mostra científica</span>
+            </div>
+            <div class="pub-meta">
+              G. Rodrigues, J. Vinícius, A. Mazoni, C. Zabini &nbsp;·&nbsp;
+              <span class="venue">Unicamp de Portas Abertas</span> &nbsp;·&nbsp; IMECC, IFGW & IG
+            </div>
+          </div>
+        </div>
+ 
+        <div class="pub-item reveal">
+          <span class="pub-year">2025</span>
+          <div class="pub-content">
+            <div class="pub-title">
+              Ressonância Eletromagnética e Zumbido da Rede
+              <span class="pub-tag">mostra científica</span>
+            </div>
+            <div class="pub-meta">
+              G. Rodrigues, H. Gimenes, J. Fávero, A. Ferreira &nbsp;·&nbsp;
+              <span class="venue">Laboratório de Física</span> &nbsp;·&nbsp; IFGW
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ───────────────────────────────────────────────────── -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2>Projetos</h2>
+      </div>
+      <div class="projects-grid">
+  
+        <a href="./pages/project.html" class="project-card reveal">
+          <span class="project-icon">∂</span>
+          <div class="project-title">Classificador de leads dinâmico.</div>
+          <p class="project-desc">
+            Modelagem de dados para construção e predição de um
+            índice de prioridade de um novo lead no funil de vendas.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>ML</span><span>Huawei Cloud</span>
+          </div>
+        </a>
+ 
+        <a href="#" class="project-card reveal">
+          <span class="project-icon">∑</span>
+          <div class="project-title">Agente de prospecção de vendas.</div>
+          <p class="project-desc">
+            Implementação de um sistema de agentes capazes de armazenar informações, 
+            escrever mensagens personalizadas e enviar e-mails.
+          </p>
+          <div class="project-tags">
+            <span>LangGraph</span><span>Supabase</span><span>Apollo</span>
+          </div>
+        </a>
+ 
+        <a href="#" class="project-card reveal">
+          <span class="project-icon">∫</span>
+          <div class="project-title">Fotogrametria de fósseis 3d.</div>
+          <p class="project-desc">
+             Aplicação de técnicas avançadas de processamento de imagem para
+             construção de modelos tridimensionais de alta precisão.
+          </p>
+          <div class="project-tags">
+            <span>Álgebra de Imagens</span><span>OpenCV</span><span>Arduino</span>
+          </div>
+        </a>
+ 
+        <a href="#" class="project-card reveal">
+          <span class="project-icon">σ</span>
+          <div class="project-title">Previsão de demanda de séries temporais.</div>
+          <p class="project-desc">
+            Pipeline de análise e predição para dados de demanda de mercado com detecção de
+            anomalias, decomposição modal e previsão multivariada.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Séries temporais</span><span>ML</span>
+          </div>
+        </a>
+ 
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ─────────────────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2>Habilidades técnicas</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-group-title">Matemática</div>
+          <div class="skill-item">Equações Diferenciais</div>
+          <div class="skill-item">Análise Numérica</div>
+          <div class="skill-item">Otimização Linear</div>
+          <div class="skill-item">Álgebra Linear</div>
+          <div class="skill-item">Modelagem</div>
+
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Estatística</div>
+          <div class="skill-item">Modelos Probabilísticos</div>
+          <div class="skill-item">Séries Temporais</div>
+          <div class="skill-item">Machine Learning</div>
+          <div class="skill-item">Análise Multivariada</div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Computação</div>
+          <div class="skill-item">Python · NumPy · Pandas</div>
+          <div class="skill-item">Julia · C</div>
+          <div class="skill-item">OpenCV</div>
+          <div class="skill-item">SQL</div>
+          <div class="skill-item">LaTeX</div>
+          <div class="skill-item">PowerBI</div>
+          <div class="skill-item">Cloud</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Education ──────────────────────────────────────────────────── -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">05</span>
+        <h2>Formação acadêmica</h2>
+      </div>
+      <div class="edu-list">
+ 
+        <div class="edu-item reveal">
+          <div class="edu-period">2024 —<br>atual</div>
+          <div class="edu-content">
+            <div class="edu-degree">Bacharelado em Matemática Aplicada e Computacional</div>
+            <div class="edu-institution">Universidade Estadual de Campinas (Unicamp) · IMECC</div>
+            <div class="edu-desc">
+              Participação em Empresa Júnior e Comunidades de Ciência de Dados. 17° da turma.
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-period">2024 —<br>2025</div>
+          <div class="edu-content">
+            <div class="edu-degree">Aspire Leaders Program</div>
+            <div class="edu-institution">Aspire Institute · Universidade de Harvard</div>
+            <div class="edu-desc">
+              Programa global de desenvolvimento de liderança. Concluí o programa como um dos 
+              9.988 finalistas em um grupo seleto de 54.337 candidatos em todo o mundo (18% do ciclo).
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ────────────────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">06</span>
+        <h2>Contato</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="contact-text">
+            Estou aberto a colaborações em pesquisa, projetos interdisciplinares
+            e oportunidades de estágio. Sinta-se à vontade para entrar em contato.
+          </p>
+
+          <a href="mailto:g281231@dac.org.br" target="_blank" class="contact-email">Email →</a>
+        </div>
+
+        <div class="contact-links reveal">
+          
+          <a href="https://www.instagram.com/gus.devlog/" target="_blank" class="contact-link">
+            <div>
+              <div class="link-label">Instagram</div>
+            </div>
+            <span class="link-arrow">→</span>
+          </a>
+
+          <a href="https://github.com/DevpGus" target="_blank" class="contact-link">
+            <div>
+              <div class="link-label">GitHub</div>
+            </div>
+            <span class="link-arrow">→</span>
+          </a>
+          
+          <a href="http://lattes.cnpq.br/0019610978625921" target="_blank" class="contact-link">
+            <div>
+              <div class="link-label">Lattes</div>
+            </div>
+            <span class="link-arrow">→</span>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/gustarodrigues/?locale=pt-BR" target="_blank" class="contact-link">
+            <div>
+              <div class="link-label">LinkedIn</div>
+            </div>
+            <span class="link-arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <span class="footer-copy">© 2026 G. Rodrigues</span>
+      <span class="footer-tag">// Todos os direitos reservados</span>
+    </div>
+  </footer>
+ 
+  <!-- ── Scroll reveal ──────────────────────────────────────────────── -->
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      }),
+      { threshold: 0.12 }
+    );
+ 
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = `${(i % 4) * 60}ms`;
+      observer.observe(el);
+    });
+  </script>
+ 
+</body>
+</html>
+
 
 </body>
 </html>

@@ -93,6 +93,19 @@ nav .container {
     animation: fadeUp 0.7s ease both;
 }
 
+.btn-return {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    text-decoration: none;  
+} 
+
+.btn-return:hover {
+    color: var(--accent-dim);
+} 
+
 .hero-tag {
     font-family: var(--font-mono);
     font-size: 11px;
@@ -171,6 +184,24 @@ h1 em {
 
 .btn-secondary:hover { border-color: var(--ink-soft); }
 
+.btn-demo {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    padding: 10px 22px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: border-color 0.2s;
+}
+
+.btn-demo:hover {
+    cursor: no-drop;
+}
+
 /* ─── Stats strip ────────────────────────────────────────────────── */
 .stats-strip {
     display: grid;
@@ -191,6 +222,15 @@ h1 em {
 .stat-number {
     font-family: var(--font-mono);
     font-size: 30px;
+    font-weight: 400;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.stat-project {
+    font-family: var(--font-mono);
+    font-size: 16px;
     font-weight: 400;
     color: var(--accent);
     line-height: 1;
@@ -242,6 +282,18 @@ h2 {
     align-items: start;
 }
 
+.about-grid h2 {
+    font-size: 18px;
+
+}
+
+.about-grid ul {
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
 .about-text p {
     font-size: 17px;
     color: var(--ink-soft);
@@ -252,6 +304,51 @@ h2 {
 .about-text p:last-child { margin-bottom: 0; }
 
 .about-sidebar {}
+
+.about-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.8fr));
+    flex-direction: column;
+    gap: 10px; 
+    margin: 0 auto;
+}
+
+.about-images .grid-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+      background-color: #fff;
+      aspect-ratio: 1 / 1; 
+}
+
+/* 4. Image Specific Rules */
+.about-images .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.about-images .grid-item .legend {
+  position: absolute;
+  font-size: 11px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about-images .grid-item:hover .legend {
+    opacity: 1;
+}
+
 
 .sidebar-block {
     margin-bottom: 32px;
