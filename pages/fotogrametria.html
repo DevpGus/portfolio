@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome do Projeto</title>
+    <title>Fotogrametria de Fósseis</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
@@ -14,9 +14,9 @@
     <section id="hero">
     <div class="container">
       <a href="../index.html" class="btn-return">←</a>
-      <div class="hero-tag">Projeto 01</div>
+      <div class="hero-tag">Projeto 03</div>
       <h1>
-        <em>∂</em><br>  Classificador de leads dinâmico.
+        <em>∫</em><br>  Fotogrametria de Fósseis.
       </h1>
 
       <div class="hero-actions">
@@ -30,15 +30,15 @@
   <div class="stats-strip">
     <div class="stat-item">
       <div class="stat-project">Timeline</div>
-      <div class="stat-label">2 meses</div>
+      <div class="stat-label">1 ano</div>
     </div>
     <div class="stat-item">
       <div class="stat-project">Time</div>
-      <div class="stat-label">Solo</div>
+      <div class="stat-label">J. Vinícius, A. Mazoni</div>
     </div>
     <div class="stat-item">
       <div class="stat-project">Status</div>
-      <div class="stat-label">Desenvolvido</div>
+      <div class="stat-label">Em Desenvolvimento</div>
     </div>
   </div>
 
@@ -55,40 +55,54 @@
       <div class="about-grid reveal">
         <div class="about-text">
           <p>
-            O projeto utiliza um conjunto de dados de vendas do Kaggle que foi 
-            adaptado para simular um ambiente realista de CRM. Características-chave 
-            como risco de crédito, potencial regional, número de funcionários, CNAE 
-            (código do setor) e dimensão da empresa foram definidas para servir de 
-            base ao modelo preditivo. O modelo final oferece uma solução automatizada 
-            e baseada em dados para a classificação de clientes, permitindo uma estratégia 
-            de vendas mais eficiente e direcionada.
+            A morfometria de fósseis é uma das partes mais importantes para determinação 
+            de características das espécies dadas as grandes transformações físico-químicas 
+            pelas quais organismos passam no processo de fossilização.
           </p>
+
+          <p>
+            Equipamentos desse tipo são muito custosos e muitas vezes não adaptados para as 
+            necessidades da paleontologia. Isso motivou esse projeto, em que uso de recursos 
+            simples de manufatura aditiva e programação de protótipos de microcontrolador podem 
+            ser combinados com técnicas avançadas de processamento de imagens para obtenção de 
+            modelos tridimensionais precisos.
+          </p>
+          
           <h2>Key Features</h2>
                         <ul>
-                            <li>Análise de CRM</li>
-                            <li>Segmentação de clientes</li>
-                            <li>Score de leads</li>
-                            <li>Engenharia de features</li>
-                            <li>Previsão do tempo de vida do cliente</li>
+                            <li>Fotogrametria</li>
+                            <li>Visão Computacional</li>
+                            <li>Transformações Lineares</li>
+                            <li>Depth from Focus</li>
+                            <li>Modelos Tridimensionais</li>
                         </ul>
-            
+
           <p>
-            Foram treinados e avaliados vários modelos populares de machine learning, incluindo 
-            o XGBoost, a Random Forest, o LightGBM e a regressão logística, com o objetivo de 
-            determinar o algoritmo com melhor desempenho para esta tarefa de classificação.
+            A técnica proposta e usada aqui é de sucessivas fotos tiradas com um microscópio 
+            portátil com distâncias conhecidas através de uma combinação de modelo dinâmico do 
+            equipamento, um motor de passo e um encoder incremental. Essas sucessivas fotos são 
+            combinadas através de transformações lineares e avaliadas em seus pontos relevantes, 
+            que permitem a recuperação das escalas entre uma foto e outra.
           </p>
+
+          <p>
+            A combinação de fotos sucessivas selecionando pixels com maior resolução entre uma 
+            foto e outra permite uma precisão de profundidade dos pixels mais fina do que os passos 
+            do motor de passo.
+          </p>
+            
         </div>
 
         <!-- Grid Image -->
         <div class="about-images">
           <div class="grid-item">
-            <img src="../src/img/leads/clv.png">
-            <figcaption class="legend">NUBRAND, LTV for Shopify.</figcaption>
+            <img src="../src/img/fotogrametria/trilho.png">
+            <figcaption class="legend">Modelo do microscópio.</figcaption>
           </div>
 
           <div class="grid-item">
-            <img src="../src/img/leads/rfm.png">
-            <figcaption class="legend">NVECTA, RFM Analysis.</figcaption>
+            <img src="../src/img/fotogrametria/keypoints.png">
+            <figcaption class="legend">Correspondência de pontos entre as imagens.</figcaption>
           </div>
         </div>
         
@@ -103,7 +117,7 @@
         <div class="contact-links reveal">
           
           
-          <a href="https://github.com/DevpGus" target="_blank" class="contact-link">
+          <a href="#" target="_blank" class="contact-link">
             <div>
               <div class="link-label">GitHub</div>
             </div>
