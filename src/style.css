@@ -184,22 +184,8 @@ h1 em {
 
 .btn-secondary:hover { border-color: var(--ink-soft); }
 
-.btn-demo {
-    font-family: var(--font-sans);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--ink);
-    border: 1px solid var(--rule);
-    padding: 10px 22px;
-    border-radius: 2px;
-    text-decoration: none;
-    transition: border-color 0.2s;
-}
-
-.btn-demo:hover {
-    cursor: no-drop;
+.btn-block {
+    cursor: no-drop !important;
 }
 
 /* ─── Stats strip ────────────────────────────────────────────────── */
