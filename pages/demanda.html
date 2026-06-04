@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome do Projeto</title>
+    <title>Séries Temporais</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
@@ -14,14 +14,14 @@
     <section id="hero">
     <div class="container">
       <a href="../index.html" class="btn-return">←</a>
-      <div class="hero-tag">Projeto 01</div>
+      <div class="hero-tag">Projeto 02</div>
       <h1>
-        <em>∂</em><br>  Classificador de leads dinâmico.
+        <em>σ</em><br>  Previsão de Demanda de Séries Temporais.
       </h1>
 
       <div class="hero-actions">
-        <a href="#" class="btn-primary">Código</a>
-        <a href="#" class="btn-demo">Live Demo</a>
+        <a href="#" class="btn-primary btn-block">Código</a>
+        <a href="#" class="btn-secondary btn-block">Live Demo</a>
       </div>
     </div>
   </section>
@@ -30,11 +30,11 @@
   <div class="stats-strip">
     <div class="stat-item">
       <div class="stat-project">Timeline</div>
-      <div class="stat-label">2 meses</div>
+      <div class="stat-label">3 meses</div>
     </div>
     <div class="stat-item">
       <div class="stat-project">Time</div>
-      <div class="stat-label">Solo</div>
+      <div class="stat-label">T. Zanetti, G. Varga, V. Greggio & E. Barbosa</div>
     </div>
     <div class="stat-item">
       <div class="stat-project">Status</div>
@@ -55,40 +55,45 @@
       <div class="about-grid reveal">
         <div class="about-text">
           <p>
-            O projeto utiliza um conjunto de dados de vendas do Kaggle que foi 
-            adaptado para simular um ambiente realista de CRM. Características-chave 
-            como risco de crédito, potencial regional, número de funcionários, CNAE 
-            (código do setor) e dimensão da empresa foram definidas para servir de 
-            base ao modelo preditivo. O modelo final oferece uma solução automatizada 
-            e baseada em dados para a classificação de clientes, permitindo uma estratégia 
-            de vendas mais eficiente e direcionada.
+            O projeto consistiu no desenvolvimento e na implementação de um sistema de predição 
+            de demanda, utilizando os modelos: ARIMA, Prophet e TSB. O sistema visou prevenir o
+            excedente de produção da industria têxtil. A contratante é capaz de selecionar o 
+            modelo adequado, comparar as previsões, identificar inconsistências e tomar medidas 
+            para prevenir o excedente de produção.
           </p>
+
+          <p>
+
+          </p>
+
           <h2>Key Features</h2>
                         <ul>
-                            <li>Análise de CRM</li>
-                            <li>Segmentação de clientes</li>
-                            <li>Score de leads</li>
-                            <li>Engenharia de features</li>
-                            <li>Previsão do tempo de vida do cliente</li>
+                            <li>Análise de Séries Temporais: Tendência, Sazonalidade e Resíduo</li>
+                            <li>Ensemble: Pré-seleção de Modelos</li>
+                            <li>Diferenciabilidade</li>
+                            <li>Interface de Usuário</li>
+                            <li>ARIMA, Prophet & TSB</li>
                         </ul>
             
           <p>
-            Foram treinados e avaliados vários modelos populares de machine learning, incluindo 
-            o XGBoost, a Random Forest, o LightGBM e a regressão logística, com o objetivo de 
-            determinar o algoritmo com melhor desempenho para esta tarefa de classificação.
+            Ao contrário dos modelos mais simples, este projeto utiliza uma arquitetura 
+            baseada em ensemble. Isto permite que para cada série temporal, o modelo ideal
+            seja selecionado, direcionando a predição para um resultado mais acurável, 
+            tornando a abordagem adaptável a novos cenários, como 
+            escassez e adversidades contextuais no mercado e no mundo.
           </p>
         </div>
 
         <!-- Grid Image -->
         <div class="about-images">
           <div class="grid-item">
-            <img src="../src/img/clv.png">
-            <figcaption class="legend">NUBRAND, LTV for Shopify.</figcaption>
+            <img src="../src/img/demanda/series-decompose.png">
+            <figcaption class="legend">QUANTDARE, Using decomposition to improve time series prediction.</figcaption>
           </div>
 
           <div class="grid-item">
-            <img src="../src/img/rfm.png">
-            <figcaption class="legend">NVECTA, RFM Analysis.</figcaption>
+            <img src="../src/img/demanda/tecidos.png">
+            <figcaption class="legend">PANDORA, Desafios para indústria têxtil.</figcaption>
           </div>
         </div>
         
@@ -101,9 +106,8 @@
     <div class="container">
 
         <div class="contact-links reveal">
-          
-          
-          <a href="https://github.com/DevpGus" target="_blank" class="contact-link">
+        
+          <a href="#" class="contact-link btn-block">
             <div>
               <div class="link-label">GitHub</div>
             </div>

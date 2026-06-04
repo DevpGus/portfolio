@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogrametria de Fósseis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/style.css"/>
+</head>
+<body>
+    <!-- ── Header ─────────────────────────────────────────────────── -->
+    <section id="hero">
+    <div class="container">
+      <a href="../index.html" class="btn-return">←</a>
+      <div class="hero-tag">Projeto 03</div>
+      <h1>
+        <em>∫</em><br>  Fotogrametria de Fósseis.
+      </h1>
+
+      <div class="hero-actions">
+        <a href="#" class="btn-primary btn-block">Código</a>
+        <a href="#" class="btn-secondary btn-block">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats strip ─────────────────────────────────────────────────── -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-project">Timeline</div>
+      <div class="stat-label">1 ano</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-project">Time</div>
+      <div class="stat-label">J. Vinícius, A. Mazoni</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-project">Status</div>
+      <div class="stat-label">Em Desenvolvimento</div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- ── About ──────────────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">◯</span>
+        <h2>Sobre o projeto</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            A morfometria de fósseis é uma das partes mais importantes para determinação 
+            de características das espécies dadas as grandes transformações físico-químicas 
+            pelas quais organismos passam no processo de fossilização.
+          </p>
+
+          <p>
+            Equipamentos desse tipo são muito custosos e muitas vezes não adaptados para as 
+            necessidades da paleontologia. Isso motivou esse projeto, em que uso de recursos 
+            simples de manufatura aditiva e programação de protótipos de microcontrolador podem 
+            ser combinados com técnicas avançadas de processamento de imagens para obtenção de 
+            modelos tridimensionais precisos.
+          </p>
+          
+          <h2>Key Features</h2>
+                        <ul>
+                            <li>Fotogrametria</li>
+                            <li>Visão Computacional</li>
+                            <li>Transformações Lineares</li>
+                            <li>Depth from Focus</li>
+                            <li>Modelos Tridimensionais</li>
+                        </ul>
+
+          <p>
+            A técnica proposta e usada aqui é de sucessivas fotos tiradas com um microscópio 
+            portátil com distâncias conhecidas através de uma combinação de modelo dinâmico do 
+            equipamento, um motor de passo e um encoder incremental. Essas sucessivas fotos são 
+            combinadas através de transformações lineares e avaliadas em seus pontos relevantes, 
+            que permitem a recuperação das escalas entre uma foto e outra.
+          </p>
+
+          <p>
+            A combinação de fotos sucessivas selecionando pixels com maior resolução entre uma 
+            foto e outra permite uma precisão de profundidade dos pixels mais fina do que os passos 
+            do motor de passo.
+          </p>
+            
+        </div>
+
+        <!-- Grid Image -->
+        <div class="about-images">
+          <div class="grid-item">
+            <img src="../src/img/fotogrametria/trilho.png">
+            <figcaption class="legend">Modelo do microscópio.</figcaption>
+          </div>
+
+          <div class="grid-item">
+            <img src="../src/img/fotogrametria/keypoints.png">
+            <figcaption class="legend">Correspondência de pontos entre as imagens.</figcaption>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+    <!-- ── Contact ────────────────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+
+        <div class="contact-links reveal">
+          
+          
+          <a href="#" class="contact-link btn-block">
+            <div>
+              <div class="link-label">GitHub</div>
+            </div>
+            <span class="link-arrow">→</span>
+          </a>
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      }),
+      { threshold: 0.12 }
+    );
+ 
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = `${(i % 4) * 60}ms`;
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
