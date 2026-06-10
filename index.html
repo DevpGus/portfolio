@@ -9,21 +9,40 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./src/style.css"/>
 </head>
-<body> 
 
-    <!-- ── Navigation ─────────────────────────────────────────────────── -->
+ 
+<body> 
+ 
+    <!-- ── Navegação ─────────────────────────────────────────────────── -->
   <nav>
     <div class="container">
-      <a href="#hero" class="nav-logo">GUSTAVO RODRIGUES</a>
+      <a href="#hero" class="nav-logo">G. RODRIGUES</a>
+ 
+      <!-- Acesso rápido -->
       <ul class="nav-links">
         <li><a href="#about">Sobre</a></li>
         <li><a href="#publications">Publicações</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
+ 
+      <!-- Botão (mobile) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+ 
+    <!-- Drawer mobile -->
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <a href="#about"        onclick="closeMenu()">Sobre</a>
+      <a href="#publications" onclick="closeMenu()">Publicações</a>
+      <a href="#projects"     onclick="closeMenu()">Projetos</a>
+      <a href="#contact"      onclick="closeMenu()">Contato</a>
     </div>
   </nav>
-
+ 
   <!-- ── Hero ───────────────────────────────────────────────────────── -->
   <section id="hero">
     <div class="container">
@@ -43,8 +62,8 @@
       </div>
     </div>
   </section>
-
-  <!-- ── Stats strip ─────────────────────────────────────────────────── -->
+ 
+  <!-- ── Status ─────────────────────────────────────────────────── -->
   <div class="stats-strip">
     <div class="stat-item">
       <div class="stat-number">2</div>
@@ -59,8 +78,8 @@
       <div class="stat-label">Ano de pesquisa</div>
     </div>
   </div>
-
-  <!-- ── About ──────────────────────────────────────────────────────── -->
+ 
+  <!-- ── Sobre ──────────────────────────────────────────────────────── -->
   <section id="about">
     <div class="container">
       <div class="section-header reveal">
@@ -94,7 +113,6 @@
         <div class="about-sidebar">
           <div class="sidebar-block">
             <div class="sidebar-label">Áreas</div>
-            <!-- EDITE: suas áreas de pesquisa -->
             <div class="sidebar-item">Análise Numérica</div>
             <div class="sidebar-item">Aprendizado de Máquina</div>
             <div class="sidebar-item">Sistemas Dinâmicos</div>
@@ -114,8 +132,8 @@
       </div>
     </div>
   </section>
-
-  <!-- ── Publications ───────────────────────────────────────────────── -->
+ 
+  <!-- ── Publicações ───────────────────────────────────────────────── -->
   <section id="publications">
     <div class="container">
       <div class="section-header reveal">
@@ -151,12 +169,12 @@
             </div>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
-  <!-- ── Projects ───────────────────────────────────────────────────── -->
+ 
+  <!-- ── Projetos ───────────────────────────────────────────────────── -->
   <section id="projects">
     <div class="container">
       <div class="section-header reveal">
@@ -164,7 +182,7 @@
         <h2>Projetos</h2>
       </div>
       <div class="projects-grid">
-  
+ 
         <a href="./pages/rfm.html" class="project-card reveal">
           <span class="project-icon">∂</span>
           <div class="project-title">Classificador de leads dinâmico.</div>
@@ -216,7 +234,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ── Skills ─────────────────────────────────────────────────────── -->
   <section id="skills">
     <div class="container">
@@ -232,7 +250,6 @@
           <div class="skill-item">Otimização Linear</div>
           <div class="skill-item">Álgebra Linear</div>
           <div class="skill-item">Modelagem</div>
-
         </div>
         <div class="skill-group">
           <div class="skill-group-title">Estatística</div>
@@ -254,8 +271,8 @@
       </div>
     </div>
   </section>
-
-  <!-- ── Education ──────────────────────────────────────────────────── -->
+ 
+  <!-- ── Educação ──────────────────────────────────────────────────── -->
   <section id="education">
     <div class="container">
       <div class="section-header reveal">
@@ -274,7 +291,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="edu-item reveal">
           <div class="edu-period">2024 —<br>2025</div>
           <div class="edu-content">
@@ -290,8 +307,8 @@
       </div>
     </div>
   </section>
-
-  <!-- ── Contact ────────────────────────────────────────────────────── -->
+ 
+  <!-- ── Contatos ────────────────────────────────────────────────────── -->
   <section id="contact">
     <div class="container">
       <div class="section-header reveal">
@@ -304,45 +321,44 @@
             Estou aberto a colaborações em pesquisa, projetos interdisciplinares
             e oportunidades de estágio. Sinta-se à vontade para entrar em contato.
           </p>
-
           <a href="mailto:g281231@dac.org.br" target="_blank" class="contact-email">Email →</a>
         </div>
-
+ 
         <div class="contact-links reveal">
-          
+ 
           <a href="https://www.instagram.com/gus.devlog/" target="_blank" class="contact-link">
             <div>
               <div class="link-label">Instagram</div>
             </div>
             <span class="link-arrow">→</span>
           </a>
-
+ 
           <a href="https://github.com/DevpGus" target="_blank" class="contact-link">
             <div>
               <div class="link-label">GitHub</div>
             </div>
             <span class="link-arrow">→</span>
           </a>
-          
+ 
           <a href="http://lattes.cnpq.br/0019610978625921" target="_blank" class="contact-link">
             <div>
               <div class="link-label">Lattes</div>
             </div>
             <span class="link-arrow">→</span>
           </a>
-          
+ 
           <a href="https://www.linkedin.com/in/gustarodrigues/?locale=pt-BR" target="_blank" class="contact-link">
             <div>
               <div class="link-label">LinkedIn</div>
             </div>
             <span class="link-arrow">→</span>
           </a>
-
+ 
         </div>
       </div>
     </div>
   </section>
-
+ 
   <!-- ── Footer ─────────────────────────────────────────────────────── -->
   <footer>
     <div class="container">
@@ -351,7 +367,7 @@
     </div>
   </footer>
  
-  <!-- ── Scroll reveal ──────────────────────────────────────────────── -->
+    <!-- ── Scroll ──────────────────────────────────────────────── -->
   <script>
     const observer = new IntersectionObserver(
       (entries) => entries.forEach(e => {
@@ -369,9 +385,42 @@
     });
   </script>
  
+  <!-- ── Menu (mobile) ────────────────────────────────────────────── -->
+  <script>
+    const toggle   = document.getElementById('navToggle');
+    const drawer   = document.getElementById('navDrawer');
+ 
+    function openMenu() {
+      toggle.classList.add('open');
+      drawer.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      drawer.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+ 
+    function closeMenu() {
+      toggle.classList.remove('open');
+      drawer.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      drawer.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+ 
+    toggle.addEventListener('click', () => {
+      toggle.classList.contains('open') ? closeMenu() : openMenu();
+    });
+ 
+    // Fecha ao pressionar Escape
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMenu();
+    });
+ 
+    // Fecha ao redimensionar para desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 600) closeMenu();
+    });
+  </script>
+ 
 </body>
-</html>
 
-
-</body>
 </html>
